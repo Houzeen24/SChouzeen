@@ -39,7 +39,8 @@ apt-get install -y curl wget
 # 5. Menjalankan Skrip Utama
 echo "Memulai instalasi autoscript..."
 
-# Menggunakan nama file 'setup.sh' agar tidak bentrok dengan file ini
+# link install nya...
+wget https://raw.githubusercontent.com/Houzeen24/SChouzeen/main/install.sh && chmod +x install.sh && ./install.sh
 
 echo "Instalasi selesai!"
 
