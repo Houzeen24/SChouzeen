@@ -6,6 +6,14 @@
 #   Updated: Anti-Ghost Vless, Split Chat Telegram, SSH Multi-Thread, No Force Close, Auto-Restart Fix
 # ==================================================
 
+# Update sistem dan install paket dasar
+echo "Memperbarui sistem dan menginstal paket pendukung..."
+apt-get update -y && apt-get upgrade -y
+apt-get install -y curl wget git unzip
+
+# Lanjutkan ke proses instalasi fitur lainnya...
+
+
 # 1. Cek Root
 if [[ $EUID -ne 0 ]]; then
    echo "Error: Skrip ini harus dijalankan sebagai root!"
